@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,10 +15,167 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-
     <script>
-      !function(){var e="dreamdata",t=window[e]=window[e]||[];if(!t.initialize){if(t.invoked)window.console&&console.error&&console.error("Dreamdata snippet included twice.");else{t.invoked=!0,t.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register",],t.factory=function(a){return function(){if(window[e].initialized)return window[e][a].apply(window[e],arguments);var r=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(a)>-1){var i=document.querySelector("link[rel='canonical']");r.push({__t:"bpc",c:i&&i.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}return r.unshift(a),t.push(r),t}};for(var a=0;a<t.methods.length;a++){var r=t.methods[a];t[r]=t.factory(r)}t.load=function(a,r){var i=document.createElement("script");i.type="text/javascript",i.async=!0,i.setAttribute("data-global-segment-analytics-key",e),i.src="https://cdn.dreamdata.cloud/scripts/analytics/next/dreamdata.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(i,n),t._loadOptions=r},t._writeKey="d260dca2-2410-4d62-a2a0-4cea89a4ed84",t.SNIPPET_VERSION="5.2.0",t.load("d260dca2-2410-4d62-a2a0-4cea89a4ed84", {"formTracking":{"html":true,"hubspot":true},"integrations":false,"intentSources":false}),t.page()}}}();
+      !(function () {
+        var e = "dreamdata",
+          dreamdata = (window[e] = window[e] || []);
+        if (!dreamdata.initialize)
+          if (dreamdata.invoked)
+            window.console &&
+              console.error &&
+              console.error("Dreamdata snippet included twice.");
+          else {
+            (dreamdata.invoked = !0),
+              (dreamdata.methods = [
+                "trackSubmit",
+                "trackClick",
+                "trackLink",
+                "trackForm",
+                "pageview",
+                "identify",
+                "reset",
+                "group",
+                "track",
+                "ready",
+                "alias",
+                "debug",
+                "page",
+                "screen",
+                "once",
+                "off",
+                "on",
+                "addSourceMiddleware",
+                "addIntegrationMiddleware",
+                "setAnonymousId",
+                "addDestinationMiddleware",
+                "register",
+              ]),
+              (dreamdata.factory = function (t) {
+                return function () {
+                  if (window[e].initialized)
+                    return window[e][t].apply(window[e], arguments);
+                  var a = Array.prototype.slice.call(arguments);
+                  if (
+                    [
+                      "track",
+                      "screen",
+                      "alias",
+                      "group",
+                      "page",
+                      "identify",
+                    ].indexOf(t) > -1
+                  ) {
+                    var r = document.querySelector("link[rel='canonical']");
+                    a.push({
+                      __t: "bpc",
+                      c: (r && r.getAttribute("href")) || void 0,
+                      p: location.pathname,
+                      u: location.href,
+                      s: location.search,
+                      t: document.title,
+                      r: document.referrer,
+                    });
+                  }
+                  return a.unshift(t), dreamdata.push(a), dreamdata;
+                };
+              });
+            for (var t = 0; t < dreamdata.methods.length; t++) {
+              var a = dreamdata.methods[t];
+              dreamdata[a] = dreamdata.factory(a);
+            }
+            (dreamdata.load = function (t, a) {
+              var r = document.createElement("script");
+              (r.type = "text/javascript"),
+                (r.async = !0),
+                r.setAttribute("data-global-dreamdata-analytics-key", e),
+                (r.src =
+                  "https://cdn.dreamdata.cloud/scripts/analytics/next/dreamdata.min.js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(r, i), (dreamdata._loadOptions = a);
+            }),
+              (dreamdata._writeKey = "d260dca2-2410-4d62-a2a0-4cea89a4ed84"),
+              (dreamdata.SNIPPET_VERSION = "dreamdata-2.0.0"),
+              dreamdata.load("d260dca2-2410-4d62-a2a0-4cea89a4ed84", {
+                formTracking: { html: true },
+                intentSources: { autoGroup: true },
+              }),
+              dreamdata.page();
+          }
+      })();
     </script>
+
+    <style>
+      :root {
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+
+        color-scheme: light;
+        color: rgba(0, 0, 0, 0.87);
+        background-color: #c4d8e2;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      button {
+        color: rgba(255, 255, 255, 0.87);
+      }
+
+      input {
+        border-radius: 4px;
+      }
+
+      a {
+        font-weight: 500;
+        color: #646cff;
+        text-decoration: inherit;
+      }
+      a:hover {
+        color: #535bf2;
+      }
+
+      body {
+        margin: 0;
+        display: flex;
+        place-items: center;
+        min-width: 320px;
+        min-height: 100vh;
+      }
+
+      h1 {
+        font-size: 3.2em;
+        line-height: 1.1;
+      }
+
+      #app {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      button {
+        border-radius: 8px;
+        border: 1px solid transparent;
+        padding: 0.6em 1.2em;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        background-color: #1a1a1a;
+        cursor: pointer;
+        transition: border-color 0.25s;
+      }
+      button:hover {
+        border-color: #646cff;
+      }
+      button:focus,
+      button:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
